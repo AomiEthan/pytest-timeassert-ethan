@@ -28,7 +28,7 @@ setup(
     ],
     entry_points={
         'pytest11': [
-            'pytest_timeassert_ethan = pytest_timeassert_ethan.plugin',
+            'pytest-timeassert-ethan = pytest_timeassert_ethan.plugin',
         ]
     }
 )

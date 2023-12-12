@@ -3,6 +3,11 @@
 # Time : 2023/12/11 11:04
 import time
 
+def pytest_configure(config):  # noqa
+    config.addinivalue_line(
+        "markers", "timeassert: run timeout"
+    )
+
 def pytest_runtest_call(item):
     timeout = item.keywords.get('timeassert', None)
     if timeout:
@@ -13,3 +18,4 @@ def pytest_runtest_call(item):
         assert end_time - start_time < float(time_value), "Test execution time exceeded the threshold"
     else:
         item.runtest()
+

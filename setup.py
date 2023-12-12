@@ -6,7 +6,7 @@ from setuptools import setup,find_packages
 
 setup(
     name='pytest-timeassert-ethan',
-    version='1.3',
+    version='1.6',
     packages=find_packages(),
     url='https://github.com/AomiEthan/pytest-timeassert-ethan',
     author="Ethan",
@@ -28,7 +28,7 @@ setup(
     ],
     entry_points={
         'pytest11': [
-            'pytest-timeassert-ethan = pytest_timeassert_ethan.plugin',
+            'timeassert-ethan = pytest-timeassert-ethan',
         ]
     }
 )

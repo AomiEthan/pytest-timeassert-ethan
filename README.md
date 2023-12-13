@@ -3,7 +3,7 @@ pytest-timeassert-ethan: pytest plugin
 ==============
 
 
-**This pytest plugin turn . into √，turn F into x**
+**This pytest plugin will assert the execution time of the use case.**
 
 
 Usage
@@ -12,6 +12,7 @@ Usage
 从github源码安装
 
    pip install git+https://github.com/AomiEthan/pytest-timeassert-ethan.git
+
 
 
 demo
@@ -39,14 +40,3 @@ E           AssertionError: Test execution time exceeded the threshold
 E           assert (1702283295.8840106 - 1702283294.8729131) < 1.0
 E            +  where 1.0 = float(1)
 
-
-
-
-pytest.ini
-==========
-
-pytest.ini配置文件中需定义标签timeassert
-
-      [pytest]
-      markers =
-        timeassert: 断言用例执行时间,超过则报AssertionError

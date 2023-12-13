@@ -35,8 +35,8 @@ demo
             start_time = time.time()
             item.runtest()  # 执行测试用例
             end_time = time.time()
->           assert end_time - start_time < float(time_value), "Test execution time exceeded the threshold"
-E           AssertionError: Test execution time exceeded the threshold
-E           assert (1702283295.8840106 - 1702283294.8729131) < 1.0
-E            +  where 1.0 = float(1)
+            assert end_time - start_time < float(time_value), "Test execution time exceeded the threshold"
+            AssertionError: Test execution time exceeded the threshold
+            assert (1702283295.8840106 - 1702283294.8729131) < 1.0
+            +  where 1.0 = float(1)
 

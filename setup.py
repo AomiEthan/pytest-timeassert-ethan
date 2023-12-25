@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name='pytest-timeassert-ethan',
-    version='1.8',
+    version='1.9',
     url='https://github.com/AomiEthan/pytest-timeassert-ethan',
     author="Ethan",
     author_email='995692858@qq.com',
